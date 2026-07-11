@@ -3,6 +3,7 @@ import { Search, Sparkles, Filter, CalendarCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SERVICE_ITEMS } from '../data';
 import { TranslationDict, ServiceItem } from '../types';
+import OptimizedImage from './OptimizedImage';
 
 interface ServicesProps {
   lang: 'en' | 'ar';
@@ -127,12 +128,11 @@ export default function Services({ lang, t, onBookService }: ServicesProps) {
               >
                 {/* Service Card Image Frame */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-charcoal">
-                  <img
+                  <OptimizedImage
                     src={service.image}
                     alt={lang === 'en' ? service.nameEn : service.nameAr}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
-                    loading="lazy"
-                    referrerPolicy="no-referrer"
+                    customWidth={500} // Cards are small, 500px is more than enough and ultra fast to download!
                   />
                   {/* Subtle Elegant Gradient Over Image */}
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent opacity-80" />

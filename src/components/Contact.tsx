@@ -158,7 +158,7 @@ export default function Contact({ lang, t }: ContactProps) {
                   </span>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Tar'a%20Street,%20Mansoura,%20Egypt"
+                  href="https://maps.google.com/?q=Samah%20Hasan%20Beauty%20Salon,%20Mansoura,%20Egypt"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[10px] uppercase font-bold text-gold hover:text-gold-light tracking-widest transition-colors"
@@ -171,7 +171,7 @@ export default function Contact({ lang, t }: ContactProps) {
               <div className="flex-grow relative h-[380px] lg:h-auto">
                 <iframe
                   title="Samah Hasan Beauty Salon Location Map"
-                  src="https://maps.google.com/maps?q=Tar'a%20Street,%20Mansoura,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Samah%20Hasan%20Beauty%20Salon,%20Mansoura,%20Egypt&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   className="absolute inset-0 w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"

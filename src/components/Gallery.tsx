@@ -3,6 +3,7 @@ import { Eye, X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GALLERY_ITEMS } from '../data';
 import { TranslationDict, GalleryItem } from '../types';
+import OptimizedImage from './OptimizedImage';
 
 interface GalleryProps {
   lang: 'en' | 'ar';
@@ -32,6 +33,22 @@ export default function Gallery({ lang, t }: GalleryProps) {
   const filteredItems = GALLERY_ITEMS.filter(
     (item) => selectedCat === 'all' || item.category === selectedCat
   );
+
+  const getOptimizedSrc = (src: string, width: number = 600) => {
+    if (src.includes('unsplash.com')) {
+      try {
+        const urlObj = new URL(src);
+        urlObj.searchParams.set('auto', 'format');
+        urlObj.searchParams.set('fm', 'webp');
+        urlObj.searchParams.set('w', width.toString());
+        urlObj.searchParams.set('q', '70');
+        return urlObj.toString();
+      } catch (e) {
+        return src;
+      }
+    }
+    return src;
+  };
 
   const openLightbox = (itemIndex: number) => {
     // Find index of the item in the filtered list
@@ -108,12 +125,11 @@ export default function Gallery({ lang, t }: GalleryProps) {
               className="break-inside-avoid relative rounded-[2rem] overflow-hidden group cursor-pointer border border-gold/10 shadow-md hover:shadow-2xl transition-all duration-500"
             >
               {/* Image Frame */}
-              <img
+              <OptimizedImage
                 src={item.image}
                 alt={lang === 'en' ? item.titleEn : item.titleAr}
                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 rounded-[2rem]"
-                loading="lazy"
-                referrerPolicy="no-referrer"
+                customWidth={500}
               />
 
               {/* Hover Dark/Gold Overlay with Info */}
@@ -176,7 +192,7 @@ export default function Gallery({ lang, t }: GalleryProps) {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.3 }}
-                  src={filteredItems[lightboxIndex].image}
+                  src={getOptimizedSrc(filteredItems[lightboxIndex].image, 1000)}
                   alt={lang === 'en' ? filteredItems[lightboxIndex].titleEn : filteredItems[lightboxIndex].titleAr}
                   className="max-h-full max-w-full object-contain rounded-2xl shadow-2xl border border-white/10"
                   referrerPolicy="no-referrer"

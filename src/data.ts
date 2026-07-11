@@ -115,9 +115,9 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     nameEn: 'Luxury Eyebrow Shaping',
     nameAr: 'تحديد ورسم الحواجب',
     descriptionEn: 'Expert brow architectural mapping, threading, tinting, and laminating to perfect your facial frame.',
-    descriptionAr: 'تخطيط ورسم وتنسيق الحواجب باحترافية، التفتيح، والترتيب لمنح عينيك تحديدًا رائعًا.',
+    descriptionAr: 'تخطيط ورسم وتنسيق الحواجب بااحترافية، التفتيح، والترتيب لمنح عينيك تحديدًا رائعًا.',
     category: 'skincare',
-    image: 'https://images.unsplash.com/photo-1620574387735-3624d75b2dbc?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'waxing',
@@ -126,7 +126,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     descriptionEn: 'Gentle, skin-safe organic wax system for smooth, hair-free skin with minimal discomfort.',
     descriptionAr: 'إزالة لطيفة للشعر باستخدام شمع عضوي مهدئ للبشرة يمنحك نعومة فائقة مع تقليل الألم لأدنى حد.',
     category: 'skincare',
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'pedicure',
@@ -144,7 +144,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     descriptionEn: 'Custom length extensions and sculpts built by nail artists using professional, odor-free, durable acrylics.',
     descriptionAr: 'إطالة وتشكيل الأظافر بمقاسات مخصصة ينفذها فنانو الأظافر باستخدام أفضل مواد الأكريليك الآمنة والمتينة.',
     category: 'nails',
-    image: '/src/assets/images/luxury_nails_1783742527853.jpg'
+    image: 'https://images.unsplash.com/photo-1604246852748-9964a17ef33a?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'nail-art',
