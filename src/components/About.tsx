@@ -3,6 +3,7 @@ import { Check } from 'lucide-react';
 import { motion } from 'motion/react';
 import { TranslationDict } from '../types';
 import OptimizedImage from './OptimizedImage';
+import bridalLook from '../assets/images/bridal_look_1783742513922.jpg';
 
 interface AboutProps {
   lang: 'en' | 'ar';
@@ -73,7 +74,7 @@ export default function About({ lang, t }: AboutProps) {
             {/* Main Portrait Frame with Soft Shadow */}
             <div className="relative z-10 w-full max-w-sm rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[3/4]">
               <OptimizedImage
-                src="/src/assets/images/bridal_look_1783742513922.jpg"
+                src={bridalLook}
                 alt="Samah Hasan Bridal Showcase"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
               />

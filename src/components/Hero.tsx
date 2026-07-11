@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { MessageSquare, Calendar, ChevronDown, Award } from 'lucide-react';
 import { TranslationDict } from '../types';
 import OptimizedImage from './OptimizedImage';
+import salonInterior from '../assets/images/salon_interior_1783742501063.jpg';
 
 interface HeroProps {
   lang: 'en' | 'ar';
@@ -42,7 +43,7 @@ export default function Hero({ lang, t, onBookClick }: HeroProps) {
       {/* Background Image with Dark Vignette Overlay */}
       <div className="absolute inset-0 z-0">
         <OptimizedImage
-          src="/src/assets/images/salon_interior_1783742501063.jpg"
+          src={salonInterior}
           alt="Samah Hasan Beauty Salon Interior"
           className="w-full h-full object-cover object-center opacity-40 scale-105 animate-[pulse_8s_infinite_alternate]"
           priority={true}

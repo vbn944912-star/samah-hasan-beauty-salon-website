@@ -1,4 +1,9 @@
 import { ServiceItem, GalleryItem, ReviewItem, StatItem, WhyChooseUsItem, TranslationDict } from './types';
+import salonInterior from './assets/images/salon_interior_1783742501063.jpg';
+import bridalLook from './assets/images/bridal_look_1783742513922.jpg';
+import luxuryNails from './assets/images/luxury_nails_1783742527853.jpg';
+
+export { salonInterior, bridalLook, luxuryNails };
 
 // Let's use the local generated assets where appropriate, and highly premium Unsplash imagery for others.
 export const SERVICE_ITEMS: ServiceItem[] = [
@@ -72,7 +77,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     descriptionEn: 'Royal wedding makeup styling utilizing high-end luxury products to make you look glowing and photogenic.',
     descriptionAr: 'مكياج زفاف ملكي مخصص بالكامل باستخدام مستحضرات تجميل عالمية فاخرة ليمنحك إطلالة ساحرة ومشرقة.',
     category: 'makeup',
-    image: '/src/assets/images/bridal_look_1783742513922.jpg'
+    image: bridalLook
   },
   {
     id: 'party-makeup',
@@ -263,21 +268,21 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'g1',
     category: 'interior',
-    image: '/src/assets/images/salon_interior_1783742501063.jpg',
+    image: salonInterior,
     titleEn: 'Luxury Salon Architecture',
     titleAr: 'التصميم الداخلي الفاخر للصالون'
   },
   {
     id: 'g2',
     category: 'bridal',
-    image: '/src/assets/images/bridal_look_1783742513922.jpg',
+    image: bridalLook,
     titleEn: 'Royal Bridal Signature Look',
     titleAr: 'الإطلالة الملكية لعرايس سماح حسن'
   },
   {
     id: 'g3',
     category: 'nails',
-    image: '/src/assets/images/luxury_nails_1783742527853.jpg',
+    image: luxuryNails,
     titleEn: 'Luxury Gold-Line Manicure',
     titleAr: 'رسم أظافر فني بالخطوط الذهبية'
   },
