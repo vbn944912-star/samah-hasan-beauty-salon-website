@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Poppins', 'Tajawal', sans-serif;
+  --font-arabic: 'Tajawal', 'Cairo', sans-serif;
+  
+  --color-gold: #C7A35B;
+  --color-gold-light: #E2C792;
+  --color-beige: #F5EFE8;
+  --color-cream: #FAF8F5;
+  --color-charcoal: #222222;
+  --color-charcoal-light: #333333;
+  --color-rosegold: #D6A98E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Luxury Feeling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7A35B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B6924A;
+}
+
+/* Glassmorphism custom classes */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(34, 34, 34, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom animation delay utilities */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-300 {
+  animation-delay: 300ms;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Samah Hasan Beauty Salon",
+  "description": "Luxurious, modern, high-converting bilingual website for Samah Hasan Beauty Salon in Mansoura, Egypt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
