@@ -12,15 +12,6 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800'
   },
   {
-    id: 'hair-coloring',
-    nameEn: 'Hair Coloring',
-    nameAr: 'صبغ وتلوين الشعر',
-    descriptionEn: 'Luxury highlights, balayage, and full tints using premium ammonia-free, hair-nourishing colors.',
-    descriptionAr: 'خصلات مضيئة فاخرة، بالاج، وصبغات كاملة باستخدام ألوان مغذية للشعر خالية من الأمونيا.',
-    category: 'hair',
-    image: 'https://images.unsplash.com/photo-1605497746444-130650193858?auto=format&fit=crop&q=80&w=800'
-  },
-  {
     id: 'hair-protein',
     nameEn: 'Hair Protein Treatment',
     nameAr: 'معالجة الشعر بالبروتين',
@@ -46,15 +37,6 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     descriptionAr: 'ترميم عميق لبنية الشعر يستهدف التقصف، الجفاف، والتلف الكيميائي من الداخل إلى الخارج.',
     category: 'hair',
     image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 'haircut',
-    nameEn: 'Signature Haircut',
-    nameAr: 'قص الشعر المميز',
-    descriptionEn: 'Custom cuts designed by expert stylists to frame your face and match your personal lifestyle.',
-    descriptionAr: 'قصات شعر مخصصة صممها خبراء التصفيف لتبرز ملامح وجهك وتناسب أسلوب حياتك.',
-    category: 'hair',
-    image: 'https://images.unsplash.com/photo-1593351498285-76f9d6303135?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'hair-extensions',
@@ -102,15 +84,6 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800'
   },
   {
-    id: 'professional-makeup',
-    nameEn: 'Professional Editorial Makeup',
-    nameAr: 'مكياج جلسات تصوير بروفيسيونال',
-    descriptionEn: 'High-definition photo shoot and editorial makeup customized for studio lights and long-lasting wear.',
-    descriptionAr: 'مكياج جلسات تصوير عالي الدقة معد خصيصًا ليقاوم إضاءات الاستوديو القوية ويدوم طويلاً.',
-    category: 'makeup',
-    image: 'https://images.unsplash.com/photo-1522337651143-ae7d9d80f11a?auto=format&fit=crop&q=80&w=800'
-  },
-  {
     id: 'facials',
     nameEn: 'Luxury Custom Facials',
     nameAr: 'جلسات العناية بالوجه والفيشيال',
@@ -156,15 +129,6 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800'
   },
   {
-    id: 'manicure',
-    nameEn: 'Luxury Manicure',
-    nameAr: 'مانيكير ملكي لليدين',
-    descriptionEn: 'Hand soak, scrub, nail shaping, cuticle care, massage, and expert polish application.',
-    descriptionAr: 'نقع اليدين بالزيوت، التقشير العضوي، تشكيل الأظافر، العناية بالجلد، المساج، وطلاء الأظافر المتقن.',
-    category: 'nails',
-    image: 'https://images.unsplash.com/photo-1604314134153-691723767e05?auto=format&fit=crop&q=80&w=800'
-  },
-  {
     id: 'pedicure',
     nameEn: 'Luxury Spa Pedicure',
     nameAr: 'باديكير سبا للأقدام',
@@ -181,15 +145,6 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     descriptionAr: 'إطالة وتشكيل الأظافر بمقاسات مخصصة ينفذها فنانو الأظافر باستخدام أفضل مواد الأكريليك الآمنة والمتينة.',
     category: 'nails',
     image: '/src/assets/images/luxury_nails_1783742527853.jpg'
-  },
-  {
-    id: 'gel-polish',
-    nameEn: 'Gel Polish',
-    nameAr: 'طلاء أظافر جيل كولور',
-    descriptionEn: 'Long-lasting high gloss gel coat that stays chip-free for up to 3 weeks. Fast UV LED dry.',
-    descriptionAr: 'طلاء جيل عالي اللمعان يدوم حتى 3 أسابيع دون تقشر أو بهتان، يجف سريعاً بجهاز UV الحديث.',
-    category: 'nails',
-    image: 'https://images.unsplash.com/photo-1632345031435-8797b2d58045?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'nail-art',
