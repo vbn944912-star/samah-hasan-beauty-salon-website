@@ -137,15 +137,7 @@ export const SERVICE_ITEMS: ServiceItem[] = [
     category: 'nails',
     image: 'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=80&w=800'
   },
-  {
-    id: 'acrylic-nails',
-    nameEn: 'Luxury Acrylic Nails',
-    nameAr: 'تركيب أظافر أكريليك فاخر',
-    descriptionEn: 'Custom length extensions and sculpts built by nail artists using professional, odor-free, durable acrylics.',
-    descriptionAr: 'إطالة وتشكيل الأظافر بمقاسات مخصصة ينفذها فنانو الأظافر باستخدام أفضل مواد الأكريليك الآمنة والمتينة.',
-    category: 'nails',
-    image: 'https://images.unsplash.com/photo-1604246852748-9964a17ef33a?auto=format&fit=crop&q=80&w=800'
-  },
+
   {
     id: 'nail-art',
     nameEn: 'Luxury Hand-painted Nail Art',
